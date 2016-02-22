@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	width: 100vw;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+#quote {
+	line-height: 1.6em;
+}
+
+#quoteAuthor {
+	font-family: 'Courgette', cursive;
+	font-size: 1.2em;
+	text-align: right;
+	margin-top: 1em;
+}
+
+.btn {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	padding: 1.5% 2.5%;
+	border: 2px solid #000;
+	background-color: transparent;
+	transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+.container {
+	width: 90%;
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 8vh;
+}
+
+#quoteWrap {
+	width: 90%;
+	margin: 8vh auto 2vh auto;
+}
+
+.quoteIcons {
+  max-width: 2.5em;
+  display: inline-block;
+  margin: 2em auto;
+  transition: transform 0.3s ease;
+}
+
+.quoteIcons img {
+	width: 100%;
+}
+
+.quoteIcons:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	position: fixed;
+	left: 5%;
+	bottom: 0;
+	width: 90%;
+	text-align: center;
+	padding-bottom: 2vh;
+}
+
+footer::before {
+	content: '';
+	position: absolute;
+	top: -15%;
+	left: 20%;
+	display: block;
+	width: 60%;
+	height: 1px;
+	background-color: #000;
+}
+
+.contact {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.social {
+	width: 90%;
+	margin: 3vh auto 0 auto;
+}
+
+.social a {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+li {
+	width: 140px;
+	list-style-type: none;
+	margin: 1vh auto;
+	padding: 1vh 0;
+	border: 2px solid #000;
+	line-height: 14px;
+ 	vertical-align: middle;
+ 	font-size: 14px;
+}
+
+.btn-social  {
+	text-decoration: none;
+	color: inherit;
+}
+
+.btn-social span {
+ 	padding-right: 5%;
+ 	font-size: 15px;
+}
+
+@media screen and (min-width:600px) {
+	body {
+		font-size: 16px;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	.container {
+		padding-top: 10vh;
+	}
+
+	.social a {
+		width: 33%;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.container {
+		padding-top: 15vh;
+	}
+}
